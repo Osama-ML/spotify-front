@@ -1,0 +1,237 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background-color: #121212;
+  display: grid;
+  grid-template-columns:  105rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Sidebar */
+
+.sidebar {
+  height: 100%;
+  width: 15rem;
+  background-color: black;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.sidebar-menu{
+  list-style: none;
+  opacity: 60%;
+}
+
+.sidebar-menu li{
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.sidebar-menu img{
+  margin-right: 1rem;
+}
+
+
+
+.sidebar-container{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+.center-content {
+  display: flex;
+  flex-direction: row;
+  background: rgb(211, 27, 34);
+  background: linear-gradient(
+    180deg,
+    rgba(211, 27, 34, 1) 11%,
+    rgba(162, 20, 27, 1) 21%,
+    rgba(151, 19, 25, 1) 46%,
+    rgba(182, 173, 173, 0) 64%
+  );
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 100%;
+}
+
+.header-managemment {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.back-next button {
+  color: white;
+  background-color: #5f2020;
+  backdrop-filter: blur(2px);
+  border-style: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.back-next button:nth-child(2) {
+  margin-left: 0.5rem;
+}
+
+.account-settings button {
+  color: #ffffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 25px;
+  border: 1px solid white;
+  background-color: #5f2020;
+  backdrop-filter: blur(10px);
+  height: 2rem;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 70%;
+  margin-bottom: 2rem;
+}
+
+.img-album {
+  margin-right: 2rem;
+}
+
+.header-content p {
+  font-size: 0.8rem;
+}
+
+.header-content h1 {
+  font-size: 5rem;
+  letter-spacing: -0.2rem;
+}
+
+/* Lista de musica */
+
+/* Botones y encabezado */
+.music {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  background: rgba(5, 5, 5, 0.2);
+  height: 100%;
+}
+
+.music-interaction {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.music-interaction-play {
+  border: none;
+  border-radius: 100px;
+  background-color: white ;
+  margin-right: 1.5rem;
+}
+
+.music-interaction-like {
+  background: none;
+  border-style: none;
+  margin-right: 1rem;
+}
+
+.music-interaction-more {
+  background: none;
+  border-style: none;
+}
+
+.music-heading-template{
+  display: grid;
+  grid-template-columns: 2% 96% 2%;
+  grid-template-areas: "simbol title duration";
+  margin-bottom: 0.3rem;
+  opacity: 60%;
+}
+
+.music-heading-title-simbol{
+  grid-area: simbol;
+  margin-left: 1rem;
+}
+.music-heading-title{
+  grid-area: title;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+.music-heading-duration{
+  grid-area: duration;
+  justify-self: end;
+  margin-right: 3rem;
+}
+
+.music-heading hr {
+  opacity: 50%;
+  margin-bottom: 2rem;
+  border-style: none;
+  background-color: grey;
+  height: 0.02rem;
+}
+/* Elementos de la lista de musica */
+.music-list-musics ol{
+  list-style: none;
+}
+
+.music-list-musics li{
+  display: grid;
+  grid-template-columns: 2% 96% 2%;
+  grid-template-areas: "number title time"
+                        "number title time";
+  margin-bottom: 1rem;
+
+}
+
+.music-list-musics-number{
+  grid-area: number;
+  margin-left: 1rem;
+  align-self: center;
+  opacity: 80%;
+}
+.music-list-musics-title{
+  grid-area: title;
+  margin-left: 1rem;
+}
+.music-list-musics-time{
+  grid-area: time;
+  justify-self: end;
+  margin-right: 3rem;
+  opacity: 60%;
+}
+
+.music-list-musics-author-group{
+  opacity: 60%;
+}
+
+/* Reproductor de musica */
+
+.reproductor {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 8.9vh;
+  background-color: #181818;
+}
