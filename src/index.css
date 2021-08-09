@@ -9,13 +9,17 @@ body {
   color: white;
   background-color: #121212;
   display: grid;
-  grid-template-columns:  105rem;
+  grid-template-columns:  15vw 85vw;
+  grid-template-rows: 90vh 10vh;
+  grid-template-areas: "sidebar header"
+                      "footer footer";
   font-family: "Open Sans", sans-serif;
 }
 
 /* Sidebar */
 
 .sidebar {
+  grid-area: sidebar;
   height: 100%;
   width: 15rem;
   background-color: black;
@@ -48,8 +52,6 @@ body {
 /* Header */
 
 .center-content {
-  display: flex;
-  flex-direction: row;
   background: rgb(211, 27, 34);
   background: linear-gradient(
     180deg,
@@ -65,16 +67,16 @@ body {
 }
 
 .header {
+  grid-area: header;
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  height: 100%;
 }
 
 .header-managemment {
+  padding-bottom: 2rem;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2rem;
 }
 
 .back-next button {
@@ -228,10 +230,6 @@ body {
 /* Reproductor de musica */
 
 .reproductor {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  height: 8.9vh;
+  grid-area: footer;
   background-color: #181818;
 }
