@@ -20,8 +20,6 @@ body {
 
 .sidebar {
   grid-area: sidebar;
-  height: 100%;
-  width: 15rem;
   background-color: black;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -34,19 +32,82 @@ body {
 }
 
 .sidebar-menu li{
+  display: flex;
+  align-items: center;
   margin-bottom: 1rem;
   font-size: 0.95rem;
+  font-weight: bold;
 }
 
 .sidebar-menu img{
   margin-right: 1rem;
 }
 
-
-
 .sidebar-container{
   display: flex;
   flex-direction: column;
+}
+
+.sidebar-personal-lists{
+  display: flex;
+  margin-top: 2rem;
+  height: 100%;
+}
+
+.create-list-button  img {
+  margin-right: 1rem;
+  background-color: white;
+  opacity: 70%;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.create-and-liked-lists button{
+  border-style: none;
+  background: none;
+  color: grey;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.create-list-button button{
+  display: flex;
+  align-items: center;
+}
+
+.liked-songs-button button{
+  display: flex;
+  align-items: center;
+}
+
+.liked-songs-button img{
+  margin-right: 1rem;
+  background: rgb(47,32,167);
+  background: linear-gradient(153deg, rgba(47,32,167,1) 0%, rgba(132,158,153,1) 100%);
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.musics-list hr{
+  opacity: 50%;
+  margin-bottom: 2rem;
+  border-style: none;
+  background-color: grey;
+  height: 0.02rem;
+}
+
+.musics-list li{
+  margin-bottom: 1.5rem;
+  color: gray;
+  font-size: 0.95rem;
+}
+
+.musics-list ul{
+ list-style: none;
 }
 
 /* Header */
