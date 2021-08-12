@@ -28,7 +28,7 @@ a{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1.5rem;
-  height: 90vh;
+  padding-bottom: 1.5rem;
 }
 
 .sidebar-menu {
@@ -98,6 +98,11 @@ a{
   padding-bottom: 5px;
   padding-right: 5px;
   padding-top: 5px;
+}
+
+.musics-list{
+  display: flex;
+  flex-direction: column;
 }
 
 .musics-list ul {
@@ -327,4 +332,27 @@ a{
 .reproductor {
   grid-area: footer;
   background-color: #181818;
+}
+
+.reproductor-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.playing-music{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: small;
+}
+
+.playing-music div{ 
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
