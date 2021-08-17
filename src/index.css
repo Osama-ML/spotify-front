@@ -239,27 +239,35 @@ a{
 }
 
 .music-interaction {
-  margin-bottom: 2rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .music-interaction-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  border-radius: 100px;
-  background-color: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #1bb85d;
   margin-right: 1.5rem;
 }
 
 .music-interaction-like {
-  background: none;
-  border-style: none;
   margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.music-interaction-more {
-  background: none;
-  border-style: none;
+.music-interaction-more{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .music-heading-template {
@@ -350,22 +358,38 @@ a{
   flex-direction: row;
   align-items: center;
   font-size: small;
+  width: 25%;
 }
 
-.playing-music div{ 
+.playing-music-data{
+  display: flex;
+  flex-direction: column; 
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.playing-music-data small{
+  flex-basis: content;
 }
 
 .volumen-control{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
   padding-right: 1rem;
+  width: 25%;
 }
 
-.volumen-control img{
+.volumen-control button{
   margin-right: 1rem;
+  border-style: none;
+  background: none;
+}
+
+.volumen-control-audio{
+  display: flex;
+  width: 5rem;
 }
 
 .reproductor-manager{
@@ -373,53 +397,71 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
+
 
 .reproductor-controls{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.reproductor-controls button{
+  border-style: none;
+  background: none;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.reproductor-controls button:nth-child(3){
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border-style: none;
+  background: white;
 }
 
 .time-playing{
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   width: 100%;
+  font-size: small;
 }
 
 .time-playing input{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   width: 30%;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   input[type='range'] {
     overflow: hidden;
-    width: 80px;
+    width: 100%;
+    height: 0.2rem;
     -webkit-appearance: none;
-    background-color: #9a905d;
+    background-color: #6e6d68;
+    border-radius: 5px;
   }
   
   input[type='range']::-webkit-slider-runnable-track {
     height: 10px;
     -webkit-appearance: none;
-    color: #13bba4;
+    color: #1ace09;
     margin-top: -1px;
   }
   
   input[type='range']::-webkit-slider-thumb {
-    width: 10px;
     -webkit-appearance: none;
-    height: 10px;
-    cursor: ew-resize;
-    background: #434343;
-    box-shadow: -80px 0 0 80px #43e5f7;
+    background: white;
+    box-shadow: 0 0 0 0 #ffffff;
+    
   }
 }

@@ -135,27 +135,27 @@
       </div>
       <div class="music">
         <div class="music-interaction">
-          <button class="music-interaction-play">
+          <div class="music-interaction-play">
             <img
               src="./assets/play_circle_filled_white_24dp.svg"
-              width="60"
-              height="60"
+              width="30"
+              height="30"
             />
-          </button>
-          <button class="music-interaction-like">
+          </div>
+          <div class="music-interaction-like">
             <img
               src="./assets/favorite_white_24dp.svg"
               width="40"
               height="40"
             />
-          </button>
-          <button class="music-interaction-more">
+          </div>
+          <div class="music-interaction-more">
             <img
               src="./assets/more_horiz_white_24dp.svg"
-              width="40"
-              height="40"
+              width="30"
+              height="30"
             />
-          </button>
+          </div>
         </div>
 
         <div class="music-heading">
@@ -387,7 +387,7 @@
               width="56"
               height="56"
             />
-            <div>
+            <div class="playing-music-data">
               <p><b>Freedom Fighters</b></p>
               <small>
                 Thomas Bergersen, Two Steps from Hell
@@ -397,18 +397,38 @@
         </div>
         <div class="reproductor-manager">
           <div class="reproductor-controls">
-            <a href="#">aaa</a><a href="#">aaa</a><a href="#">aaa</a><a href="#">aaa</a><a href="#">aaa</a>
+              <button>
+                <img src="./assets/random_music.svg"/>
+              </button>
+              <button>
+                <img src="./assets/previous_music.svg"/>
+              </button>
+              <button>
+                <img src="./assets/reproduce_music.svg"/>
+              </button>
+              <button>
+                <img src="./assets/following_music.svg"/>
+              </button>
+              <button>
+                <img src="./assets/repeat_music.svg"/>
+              </button>
           </div>
           <div class="time-playing">
             <p>0:00</p>
-            <input type="range" min="0" max="100" value="20" />
+            <input type="range" min="0" max="100" value="0" />
             <p>2:31</p>
           </div>
         </div>
         <div class="volumen-control">
-          <img src="./assets/conect_other_device.svg"/>
-          <img src="./assets/volumen_control.svg"/>
-          <input type="range" min="0" max="100" value="40" />
+          <button>
+            <img src="./assets/conect_other_device.svg"/>
+          </button>
+          <button>
+            <img src="./assets/volumen_control.svg"/>
+          </button>
+          <div class="volumen-control-audio">
+            <input type="range" min="0" max="100" value="40" />
+          </div>
         </div>
       </div>
     </div>
