@@ -335,6 +335,58 @@ a{
   opacity: 60%;
 }
 
+.copyright{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: small;
+  opacity: 70%;
+}
+
+.more-from-this-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.more-from-this-group a{
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  opacity: 70%;
+  
+}
+
+.another-albums{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.album-card{
+  width: 11rem;
+  height: 17rem;
+  background: #171717;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.album-card img{
+  width: 11rem;
+  height: 11rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.album-card p{
+  font-weight: bolder;
+  margin-bottom: .5rem;
+}
+
 /* Reproductor de musica */
 
 .reproductor {
