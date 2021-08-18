@@ -281,6 +281,7 @@ a{
 .music-heading-title-simbol {
   grid-area: simbol;
   margin-left: 1rem;
+  justify-self: end;
 }
 .music-heading-title {
   grid-area: title;
@@ -318,6 +319,7 @@ a{
   grid-area: number;
   margin-left: 1rem;
   align-self: center;
+  justify-self: end;
   opacity: 80%;
 }
 .music-list-musics-title {
