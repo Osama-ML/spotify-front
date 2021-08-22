@@ -7,7 +7,7 @@
 
 body {
   color: white;
-  background-color: #121212;
+  background: #0f0f0f;
   display: grid;
   grid-template-columns: 15vw 85vw;
   grid-template-rows: 90vh 10vh;
@@ -152,15 +152,14 @@ a{
 /* Header */
 
 .center-content {
-  background: rgb(211, 27, 34);
-  background: linear-gradient(
-    180deg,
-    rgba(211, 27, 34, 1) 11%,
-    rgba(162, 20, 27, 1) 21%,
-    rgba(151, 19, 25, 1) 46%,
-    rgba(182, 173, 173, 0) 64%
+  background: linear-gradient(to bottom,
+    #d31b22 0vh,
+    #ad161c 20vh,
+    #770f14 40vh,
+    rgba(255, 0, 0, 0) 60vh
   );
-  overflow-y: scroll;
+  height: auto;
+  overflow-y: auto;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -234,8 +233,9 @@ a{
   padding-top: 2rem;
   padding-left: 3rem;
   padding-right: 2rem;
+  padding-bottom: 2rem;
   background: rgba(5, 5, 5, 0.2);
-  height: 100%;
+  height: auto;
 }
 
 .music-interaction {
@@ -366,6 +366,8 @@ a{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: auto;
+  background: none;
 }
 
 .album-card{
