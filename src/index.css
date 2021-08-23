@@ -23,12 +23,12 @@ a{
 /* Sidebar */
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   grid-area: sidebar;
   background-color: black;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem;
+  height: 100%;
 }
 
 .sidebar-menu {
@@ -55,7 +55,7 @@ a{
 
 .sidebar-personal-lists {
   margin-top: 2rem;
-  height: 10rem;
+  flex-basis: 60%;
 }
 
 .create-list-button img {
@@ -100,11 +100,6 @@ a{
   padding-top: 5px;
 }
 
-.musics-list{
-  display: flex;
-  flex-direction: column;
-}
-
 .musics-list ul {
   display: flex;
   flex-direction: column;
@@ -127,11 +122,10 @@ a{
 }
 
 .install-app{
-  padding-top: 12rem;
-  margin-top: 5rem;
-  margin-bottom: 1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .install-app a {
@@ -152,6 +146,7 @@ a{
 /* Header */
 
 .center-content {
+  grid-area: header;
   background: linear-gradient(to bottom,
     #d31b22 0vh,
     #ad161c 20vh,
@@ -166,7 +161,6 @@ a{
 }
 
 .header {
-  grid-area: header;
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -403,10 +397,7 @@ a{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 
 .playing-music{
